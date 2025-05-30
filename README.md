@@ -1,24 +1,22 @@
-# Tracking U.S. Global Alignment in the United Nations General Assembly
+# The Impact of Housing Costs on Commuting and Transportation Choices in San Mateo County 2012-2022
 
 # 📁 Description
-This project analyzes long-term trends in how countries align with U.S. positions in the United Nations General Assembly (UNGA). Using roll-call vote data and ideal point estimates from 1946 to 2023, it builds a Diplomatic Risk Index (DRI) to quantify and visualize changes in international alignment over time. The project includes exploratory data analysis, trend visualization, and a predictive XGBoost regression model to forecast future U.S. alignment by country based on historical voting behavior, volatility, and ideological distance.
+This project investigates how rising housing costs have shaped commuting behavior and public transit reliance in San Mateo County over a decade. Using American Community Survey (ACS) data from 2012 to 2022, the analysis explores the intersections between housing affordability, income trends, rent burden, and commute durations.
 
-# 🔍 Key Features:
-- Exploratory Data Analysis (EDA) of country voting trends and alliance structures
-- Diplomatic Risk Index (DRI): combines alignment decline, volatility, and ideological distance
-- Machine Learning Forecasting using XGBoost to predict future diplomatic alignment
-- Visualizations highlighting top allies, most volatile countries, and shifting geopolitical patterns
+# 🖇️ Research Question
+- How have rising housing costs influenced residents' reliance on public transit and commute times?
+- Do lower-income households face longer commute times?
+- Is there a measurable relationship between commute duration and rent burden?
 
 # 🛠️ Utility Belt
-- Python (Pandas, Seaborn, Matplotlib, Scikit-learn, XGBoost, Statsmodels)
-- Data from Voeten UN Voting Dataset
-- Designed for applications in political risk analysis, foreign policy, and multilateral strategy planning
+- Data Source: American Community Survey (ACS) 5-year estimates (2012–2022)
+- Metrics Analyzed: Median home value, rent, income, public transit usage, commute time, and rent burden
+- Tools: Python (Pandas, Matplotlib, Seaborn), correlation analysis, visualizations
 
 # 🔬 Key Findings
-- Global U.S. Alignment is Falling: Average UNGA agreement with U.S. votes has declined steadily since the 1950s, especially among non-NATO countries.
-- NATO Countries Remain More Aligned: NATO members show more consistent support for U.S. positions, while non-members exhibit sharper and sustained declines.
-- Ideological Distance Predicts Alignment: Countries ideologically closer to the U.S. vote more in line with it; those farther away show lower agreement scores.
-- Top Diplomatic Risks Identified: Nicaragua, Iran, Venezuela, and Cuba rank highest on the Diplomatic Risk Index due to declining, volatile, and ideologically distant behavior.
-- Alignment is "Sticky": Most countries show high autocorrelation in voting patterns, indicating persistent alignment over time.
-- Predictive Model Performs Well: An XGBoost model achieved strong predictive accuracy (R² = 0.831), showing that future alignment is largely shaped by past behavior and volatility.
-- Actionable Insight: The index helps policymakers and analysts monitor shifting alliances and anticipate geopolitical risk.
+- Housing Costs: Home values more than doubled (from ~$700K to $1.3M) and rents increased by over 80% from 2012 to 2022.
+- Transit Use: Public transit usage rose steadily until 2019 but dropped sharply post-pandemic, falling below 2012 levels by 2022.
+- Commute Patterns: Commute times increased with housing prices until 2020, then decreased sharply due to remote work.
+- Rent Burden: Remained high (~95–97%) across commute lengths, indicating commute time does not strongly predict rent burden.
+- Income vs. Burden: Rent burden inversely correlated with income, showing that affordability remains a challenge despite rising wages.
+
